@@ -1,0 +1,88 @@
+
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <title>Loan Cross Sale Portal</title>
+      <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+        input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+      </style>
+  </head>
+
+<body>
+  <h2>Search Section</h2>
+<div>
+  <form name="fetch-cin" method="get" action="cin">
+    <input type="text" id="cin" name="cin" placeholder="Input CIN">
+    <input type="submit" value="Submit" name = "Submit">
+  </form>
+</div>
+</body>
+
+
+<body>
+  <h2>Customer Details Section</h2>
+<div>
+  <form>
+    <label>Customer Number </label><input type="text" placeholder="{{cin}}">
+    <label>Name </label><input type="text" placeholder="{{name}}">
+    <label>Age </label><input type="text" placeholder="{{age}}">
+    <label>Work Experience in Years </label><input type="text" placeholder="{{experience}}">
+    <label>Annual Income($000) </label><input type="text" placeholder="{{income}}">
+    <label>ZIP code </label><input type="text" placeholder="{{zip}}">
+  </form>
+</div>
+</body>
+
+<body>
+  <h2>Product Holding Section</h2>
+<div>
+  <form>
+    <label>Value of house mortgage($000) </label><input type="text" placeholder="{{mortgage}}">
+    <label>Does the customer have a securities account with the bank? </label><input type="text" placeholder="{{securities}}">
+    <label>Does the customer use internet banking facilities? </label><input type="text" placeholder="{{online}}">
+    <label>Does the customer use a credit card issued by UniversalBank? </label><input type="text" placeholder="{{creditcard}}">
+    <label>Avg. spending on credit cards per month ($000) </label><input type="text" placeholder="{{ccavg}}">
+  </form>
+</div>
+</body>
+
+<body>
+  <h2>Loan Likelihood Section</h2>
+<div>
+  <form>
+    <label>Likelihood of loan takeup </label><input type="text" placeholder="{{probability}}">
+  </form>
+</div>
+</body>
+
+</html>

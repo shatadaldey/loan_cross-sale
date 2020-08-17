@@ -11,7 +11,7 @@ app_flask = Flask(__name__,static_url_path="/",
 @app_flask.route("/")
 def root():
     return app_flask.send_static_file("front_end_input.html")
-    # return render_template("front_end.html")
+
 
 @app_flask.route("/cin")
 def fetch_cin_details(methods=['GET']):

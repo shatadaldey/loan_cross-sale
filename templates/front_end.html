@@ -15,20 +15,6 @@
           box-sizing: border-box;
         }
 
-        input[type=submit] {
-          width: 100%;
-          background-color: #4CAF50;
-          color: white;
-          padding: 14px 20px;
-          margin: 8px 0;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-          background-color: #45a049;
-        }
 
         div {
           border-radius: 5px;
@@ -36,16 +22,45 @@
           padding: 20px;
         }
       </style>
+
+      <style>
+      body {
+        background-color: rgb(204, 229, 255);
+      }
+      </style>
+
+       <style>
+      img {
+        border-radius: 8px;
+        position: top-right
+      }
+      </style> 
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+ 
+      .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+      }
+      </style>
   </head>
 
 <body>
-  <h2>Search Section</h2>
-<div>
-  <form name="fetch-cin" method="get" action="cin">
-    <input type="text" id="cin" name="cin" placeholder="Input CIN">
-    <input type="submit" value="Submit" name = "Submit">
-  </form>
-</div>
+  <br><br>
+<button onclick="goBack()">Back to Serach</button>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+</body>
+
+<body>
+  <div class="top-right">
+    <img src="https://www.logodesign.net/logo/piggy-bank-merged-with-a-bank-building-4574ld.png?size=2&industry=bank&bg=1" alt="bank_logo" width="80" height="80">
+  </div><br><br>
 </body>
 
 
@@ -83,6 +98,16 @@
     <label>Likelihood of loan takeup </label><input type="text" placeholder="{{probability}}">
   </form>
 </div>
+</body>
+
+<body>
+  <br>
+<button onclick="goBack()">Back to Serach</button>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
 </body>
 
 </html>

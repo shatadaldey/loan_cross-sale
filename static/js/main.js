@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
       $("#SAS").text(final_data["Securities Account"])
       $("#IBF").text(final_data["Online"])
       $("#CCS").text(final_data["CCAvg"])
-      $("#score").text(final_data["score"])
+      $("#score").text(final_data["Random"])
             },
       error:function(e){
         console.log(e)

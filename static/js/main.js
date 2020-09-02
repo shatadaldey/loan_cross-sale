@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
   $("#cin_submit").click(function(){
     var cin= $("#cin").val();
     $.ajax({
-      url:"http://localhost:8431/cin?cin="+cin,
+      url:"http://35.239.146.212:80/cin?cin="+cin,
       method:"GET",
       success:function(data){
         var x=JSON.parse(JSON.stringify(data))
@@ -17,13 +17,13 @@ jQuery(document).ready(function($) {
       $("#cust_age").text(final_data["Age"])
       $("#work_ex").text(final_data["Experience"])
       $("#income").text(final_data["Income"])
-      $("#zip").text(final_data["ZIP Code"])
+      $("#zip").text(final_data["ZIP_Code"])
 
       $("#MV").text(final_data["Mortgage"])
-      $("#SAS").text(final_data["Securities Account"])
+      $("#SAS").text(final_data["Securities_Account"])
       $("#IBF").text(final_data["Online"])
       $("#CCS").text(final_data["CCAvg"])
-      $("#score").text(final_data["Random"])
+      $("#score").text(final_data["Loan_takeup"])
             },
       error:function(e){
         console.log(e)
